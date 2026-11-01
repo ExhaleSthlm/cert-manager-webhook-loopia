@@ -14,6 +14,9 @@ certManager:
 
 replicaCount: 1
 
+# Old ReplicaSets kept for rollback. Kubernetes defaults to 10.
+revisionHistoryLimit: 3
+
 image:
   repository: ghcr.io/sajfer/cert-manager-webhook-loopia
   # Defaults to the chart's appVersion.
